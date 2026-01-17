@@ -1,0 +1,20 @@
+[project]
+name = "lanceembeddings-aiagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb",
+    "beautifulsoup4",
+    "lxml",
+    "pyarrow",
+    "pytz",
+    "sentence-transformers",
+    "langchain",
+    "langchain-community",
+    "langchain-openai",
+    "langchain-huggingface",
+    "lancedb",
+    "pandas>=2.3.3",
+]
