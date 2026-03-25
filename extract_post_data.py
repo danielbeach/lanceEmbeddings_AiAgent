@@ -59,7 +59,7 @@ def main():
         raise FileNotFoundError(f"HTML root not found: {html_root}")
 
     con = duckdb.connect()
-    con.execute("INSTALL lance FROM community")
+    con.execute("INSTALL lance")
     con.execute("LOAD lance")
 
     csv_path_str = str(csv_path).replace("'", "''")
