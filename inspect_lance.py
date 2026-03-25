@@ -8,7 +8,7 @@ def main():
         raise FileNotFoundError(f"Lance dataset not found: {lance_path}")
     
     con = duckdb.connect()
-    con.execute("INSTALL lance FROM community")
+    con.execute("INSTALL lance")
     con.execute("LOAD lance")
     
     lance_path_str = str(lance_path).replace("'", "''")
